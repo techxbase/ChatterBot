@@ -1,10 +1,10 @@
-from django.conf.urls import url
+from django.conf.urls import re_path
 from django.contrib import admin
 from example_app.views import ChatterBotAppView, ChatterBotApiView
 
 
 urlpatterns = [
-    url(r'^$', ChatterBotAppView.as_view(), name='main'),
-    url(r'^admin/', admin.site.urls, name='admin'),
-    url(r'^api/chatterbot/', ChatterBotApiView.as_view(), name='chatterbot'),
+    re_path(r'^$', ChatterBotAppView.as_view(), name='main'),
+    re_path(r'^admin/', admin.site.urls, name='admin'),
+    re_path(r'^api/chatterbot/', ChatterBotApiView.as_view(), name='chatterbot'),
 ]
