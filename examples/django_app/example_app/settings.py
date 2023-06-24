@@ -14,11 +14,12 @@ SECRET_KEY = 'fsch+6!=q+@ol&%0x!nwdl@48^ixbd4clx5f1i!5n^66y+pmn*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-  'localhost',
+  '.localhost',
   '127.0.0.1',
   '104.236.24.119',
   'tekhub.domcloud.io',
-  'nyc.domcloud.io']
+  'nyc.domcloud.io',
+]
 
 
 # Application definition
